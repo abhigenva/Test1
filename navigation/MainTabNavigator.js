@@ -42,6 +42,11 @@ export default TabNavigator(
           case 'Settings':
             iconName =
               Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options';
+            break;
+          case 'ChatScreen':
+            iconName =
+              Platform.OS === 'ios' ? `ios-arrow-down${focused ? '' : '-outline'}` : 'md-arrow-down';
+            break;
         }
         return (
           <Ionicons
