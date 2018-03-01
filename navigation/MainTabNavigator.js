@@ -12,14 +12,17 @@ import SettingsScreen from '../screens/SettingsScreen';
 export default TabNavigator(
   {
     Home: {
-      screen: HomeScreen,
+      screen: HomeScreen
     },
     Links: {
-      screen: LinksScreen,
+      screen: LinksScreen
     },
     Settings: {
-      screen: SettingsScreen,
+      screen: SettingsScreen
     },
+    ChatScreen: {
+      screen: ChatingScreen
+    }
   },
   {
     navigationOptions: ({ navigation }) => ({
