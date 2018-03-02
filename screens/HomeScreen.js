@@ -15,6 +15,7 @@ import { MonoText } from '../components/StyledText';
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     header: null,
+    title: null,
   };
 
   render() {
@@ -148,15 +149,15 @@ const styles = StyleSheet.create({
   },
   tabBarInfoContainer: {
     position: 'absolute',
-    bottom: 0,
+    bottom: 100,
     left: 0,
     right: 0,
     ...Platform.select({
       ios: {
-        shadowColor: 'black',
-        shadowOffset: { height: -3 },
-        shadowOpacity: 0.1,
-        shadowRadius: 3,
+        shadowColor: 'orange',
+        shadowOffset: { height: -5 },
+        shadowOpacity: 0.4,
+        shadowRadius: 5,
       },
       android: {
         elevation: 20,

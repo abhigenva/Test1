@@ -8,6 +8,7 @@ import Colors from '../constants/Colors';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import ChatingScreen from '../screens/ChatingScreen';
 
 export default TabNavigator(
   {
@@ -51,7 +52,7 @@ export default TabNavigator(
         return (
           <Ionicons
             name={iconName}
-            size={28}
+            size={32}
             style={{ marginBottom: -3 }}
             color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
           />
