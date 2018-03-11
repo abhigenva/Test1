@@ -8,12 +8,16 @@ import Colors from '../constants/Colors';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import ChatingScreen from '../screens/ChatingScreen'
+import ChatingScreen from '../screens/ChatingScreen';
+import Wallet from '../screens/Wallet';
 
 export default TabNavigator(
   {
     Home: {
       screen: HomeScreen
+    },
+    Wscreen: {
+      screen: Wallet
     },
     Links: {
       screen: LinksScreen
@@ -48,6 +52,10 @@ export default TabNavigator(
             iconName =
               Platform.OS === 'ios' ? `ios-arrow-down${focused ? '' : '-outline'}` : 'md-arrow-down';
             break;
+          case 'Wscreen':
+          iconName =
+            Platform.OS === 'ios' ? `ios-arrow-down${focused ? '' : '-outline'}` : 'md-arrow-down';
+          break;
         }
         return (
           <Ionicons
