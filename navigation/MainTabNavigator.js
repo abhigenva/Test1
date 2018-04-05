@@ -22,11 +22,11 @@ export default TabNavigator(
     Links: {
       screen: LinksScreen
     },
-    Settings: {
-      screen: SettingsScreen
-    },
     ChatScreen: {
       screen: ChatingScreen
+    },
+    Settings: {
+      screen: SettingsScreen
     }
   },
   {
@@ -42,15 +42,15 @@ export default TabNavigator(
                 : 'md-home';
             break;
           case 'Links':
-            iconName = Platform.OS === 'ios' ? `ios-link${focused ? '' : '-outline'}` : 'md-link';
+            iconName = Platform.OS === 'ios' ? `ios-mail-open${focused ? '' : '-outline'}` : 'md-mail-open';
             break;
           case 'Settings':
             iconName =
-              Platform.OS === 'ios' ? `ios-options${focused ? '' : '-outline'}` : 'md-options';
+              Platform.OS === 'ios' ? `ios-settings${focused ? '' : '-outline'}` : 'md-settings';
             break;
           case 'ChatScreen':
             iconName =
-              Platform.OS === 'ios' ? `ios-chatbubbles${focused ? '' : '-outline'}` : 'md-chatbubbles';
+              Platform.OS === 'ios' ? `ios-notifications${focused ? '' : '-outline'}` : 'md-notifications';
             break;
           case 'Wscreen':
           iconName =
