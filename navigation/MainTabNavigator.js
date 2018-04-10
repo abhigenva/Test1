@@ -54,7 +54,7 @@ export default TabNavigator(
             break;
           case 'Wscreen':
           iconName =
-            Platform.OS === 'ios' ? `ios-arrow-down${focused ? '' : '-outline'}` : 'md-arrow-down';
+            Platform.OS === 'ios' ? `ios-card${focused ? '' : '-outline'}` : 'md-card';
           break;
         }
         return (
