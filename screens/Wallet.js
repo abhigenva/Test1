@@ -4,7 +4,7 @@ import { ExpoLinksView } from '@expo/samples';
 
 export default class Wallet extends React.Component {
   static navigationOptions = {
-    title: 'Wallet',
+    header: <Text>Wallet</Text>,
   };
 
   render() {
