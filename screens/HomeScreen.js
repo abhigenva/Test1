@@ -8,6 +8,7 @@ import {
   Button,
   TouchableOpacity,
   View,
+  Alert,
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
@@ -23,7 +24,16 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          
+          <Image
+            style={{resizeMode: 'center', width:70, height:70}}
+            source={require('../assets/images/icon.png')}
+          />
+            <Button style={styles.button1} contentContainerStyle={styles.contentContainer}
+              onPress={() =>{
+                Alert.alert('You tapped the button');
+              }}
+              title="Press Me"
+            />
         </ScrollView>
       </View>
     );
@@ -58,5 +68,9 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
   },
+  button1: {
+    flex: 1,
+    color: 'yellow',
+  }
 
 });
