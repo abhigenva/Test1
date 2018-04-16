@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   Image,
   Platform,
@@ -11,8 +11,9 @@ import {
   Alert,
 } from 'react-native';
 import { WebBrowser } from 'expo';
-
 import { MonoText } from '../components/StyledText';
+import { Container, Content } from 'native-base';
+import Swiper from 'react-native-swiper';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -22,20 +23,21 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <Image
-            style={{resizeMode: 'center', width:70, height:70}}
-            source={require('../assets/images/icon.png')}
-          />
-            <Button style={styles.button1} contentContainerStyle={styles.contentContainer}
-              onPress={() =>{
-                Alert.alert('You tapped the button');
-              }}
-              title="Press Me"
-            />
-        </ScrollView>
-      </View>
+      <Container>
+        <Content>
+          <Swiper>
+            <View style={styles.slideDefault}>
+              <Text style={styles.text}>Restaurants</Text>
+            </View>
+            <View style={styles.slideDefault}>
+              <Text style={styles.text}>Profiles</Text>
+            </View>
+            <View style={styles.slideDefault}>
+              <Text style={styles.text}>Clubs</Text>
+            </View>
+          </Swiper>
+        </Content>
+      </Container>
     );
   }
 
@@ -64,13 +66,16 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  slideDefault:{
     flex: 1,
-    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB'
   },
-  button1: {
-    flex: 1,
-    color: 'yellow',
+  text:{
+    color: 'white',
+    fontSize: 30,
+    fontWeight: 'bold'
   }
 
 });
