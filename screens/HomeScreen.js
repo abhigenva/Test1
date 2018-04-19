@@ -25,13 +25,44 @@ export default class HomeScreen extends React.Component {
     return (
       <Container>
         <Content>
-          <Swiper>
+          <Swiper
+            loop={false}
+            showsPagination={false}
+            index={1}
+          >
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Restaurants</Text>
             </View>
-            <View style={styles.slideDefault}>
-              <Text style={styles.text}>Profiles</Text>
-            </View>
+            <Swiper
+              loop={false}
+              showsPagination={false}
+              horizontal={false}
+              index={1}
+            >
+              <View style={styles.slideDefault}>
+                <Text style={styles.text}>Swiping Up</Text>
+              </View>
+              <View style={styles.slideDefault}>
+                <Text style={styles.text}>Profiles</Text>
+              </View>
+              <Swiper
+                loop={false}
+                index={1}
+              >
+                <View style={styles.slideDefault}>
+                  <Image source={require('../assets/images/image.png')} style={{width:400, height:400}}/>
+                </View>
+                <View style={styles.slideDefault}>
+                  <Image source={require('../assets/images/pr.png')} style={{width:400, height:400}}/>
+                </View>
+                <View style={styles.slideDefault}>
+                  <Image source={require('../assets/images/cg.png')} style={{width:400, height:400}}/>
+                </View>
+              </Swiper>
+              <View style={styles.slideDefault}>
+                <Text style={styles.text}>Swiping Down</Text>
+              </View>
+            </Swiper>
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Clubs</Text>
             </View>
