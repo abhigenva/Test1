@@ -14,6 +14,10 @@ import { WebBrowser } from 'expo';
 import { MonoText } from '../components/StyledText';
 import { Container, Content } from 'native-base';
 import Swiper from 'react-native-swiper';
+import Svg, {
+  Circle,
+  Ellipse,
+} from 'react-native-svg';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -29,6 +33,7 @@ export default class HomeScreen extends React.Component {
             loop={false}
             showsPagination={false}
             index={1}
+            animated={false}
           >
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Restaurants</Text>
@@ -47,21 +52,31 @@ export default class HomeScreen extends React.Component {
               </View>
               <Swiper
                 loop={false}
-                index={1}
+                index={0}
+                showsPagination={false}
               >
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/image.png')} style={{width:400, height:400}}/>
+                  <Image source={require('../assets/images/image.png')} style={{width:300, height:300}}/>
                 </View>
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/pr.png')} style={{width:400, height:400}}/>
+                  <Image source={require('../assets/images/pr.png')} style={{width:300, height:300}}/>
                 </View>
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/cg.png')} style={{width:400, height:400}}/>
+                  <Image source={require('../assets/images/cg.png')} style={{width:300, height:300}}/>
                 </View>
               </Swiper>
               <View style={styles.slideDefault}>
                 <Text style={styles.text}>Swiping Down</Text>
               </View>
+              <Svg
+                height="100%"
+                width="100%"
+              >
+                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="5" fill="#ffffff"/>
+                <Circle cx="25%" cy="88%" r="18" fill="orange" />
+                <Circle cx="50%" cy="85%" r="18" fill="orange" />
+                <Circle cx="75%" cy="88%" r="18" fill="orange" />
+              </Svg>
             </Swiper>
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Clubs</Text>
