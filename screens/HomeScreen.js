@@ -38,45 +38,46 @@ export default class HomeScreen extends React.Component {
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Restaurants</Text>
             </View>
+
             <Swiper
               loop={false}
               showsPagination={false}
               horizontal={false}
               index={1}
+              animated={false}
             >
-              <View style={styles.slideDefault}>
-                <Text style={styles.text}>Swiping Up</Text>
-              </View>
-              <View style={styles.slideDefault}>
-                <Text style={styles.text}>Profiles</Text>
-              </View>
               <Swiper
                 loop={false}
                 index={0}
                 showsPagination={false}
+                animated={true}
               >
+
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/image.png')} style={{width:300, height:300}}/>
+                  <Image source={require('../assets/images/image.png')} style={{width:'100%', height:'60%'}}/>
                 </View>
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/pr.png')} style={{width:300, height:300}}/>
+                    <Image source={require('../assets/images/pr.png')} style={{width:'100%', height:'60%', }}/>
                 </View>
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/cg.png')} style={{width:300, height:300}}/>
+                  <Image source={require('../assets/images/cg.png')} style={{width:'100%', height:'60%'}}/>
                 </View>
+
               </Swiper>
               <View style={styles.slideDefault}>
                 <Text style={styles.text}>Swiping Down</Text>
               </View>
+              <View style={styles.slideDefault}>
               <Svg
                 height="100%"
                 width="100%"
               >
-                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="5" fill="#ffffff"/>
-                <Circle cx="25%" cy="88%" r="18" fill="orange" />
-                <Circle cx="50%" cy="85%" r="18" fill="orange" />
-                <Circle cx="75%" cy="88%" r="18" fill="orange" />
+                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
+                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('test for press in')}} />
+                <Circle cx="50%" cy="85%" r="24" fill="orange" />
+                <Circle cx="75%" cy="88%" r="20" fill="orange" />
               </Svg>
+              </View>
             </Swiper>
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Clubs</Text>
@@ -116,10 +117,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#9DD6EB'
+    backgroundColor: '#fefefe'
   },
   text:{
-    color: 'white',
+    color: 'black',
     fontSize: 30,
     fontWeight: 'bold'
   }
