@@ -43,7 +43,7 @@ export default class HomeScreen extends React.Component {
               loop={false}
               showsPagination={false}
               horizontal={false}
-              index={1}
+              index={0}
               animated={false}
             >
               <Swiper
@@ -64,9 +64,6 @@ export default class HomeScreen extends React.Component {
                 </View>
 
               </Swiper>
-              <View style={styles.slideDefault}>
-                <Text style={styles.text}>Swiping Down</Text>
-              </View>
               <View style={styles.slideDefault}>
               <Svg
                 height="100%"
