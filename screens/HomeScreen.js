@@ -77,6 +77,7 @@ export default class HomeScreen extends React.Component {
               </View>
             </Swiper>
             <View style={styles.slideDefault}>
+
               <Text style={styles.text}>Clubs</Text>
             </View>
           </Swiper>
