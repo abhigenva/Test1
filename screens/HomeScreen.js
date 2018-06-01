@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { WebBrowser } from 'expo';
 import { MonoText } from '../components/StyledText';
-import { Container, Content } from 'native-base';
+import { Container, Content, Spinner } from 'native-base';
 import Swiper from 'react-native-swiper';
 import Svg, {
   Circle,
@@ -37,6 +37,8 @@ export default class HomeScreen extends React.Component {
           >
             <View style={styles.slideDefault}>
               <Text style={styles.text}>Restaurants</Text>
+              <Text>Loading...</Text>
+              <Spinner color='blue' />
             </View>
 
             <Swiper
@@ -79,6 +81,7 @@ export default class HomeScreen extends React.Component {
             <View style={styles.slideDefault}>
 
               <Text style={styles.text}>Clubs</Text>
+              <Spinner color='blue' />
             </View>
           </Swiper>
         </Content>
