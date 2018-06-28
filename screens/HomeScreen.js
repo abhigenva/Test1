@@ -18,6 +18,7 @@ import Svg, {
   Circle,
   Ellipse,
 } from 'react-native-svg';
+import { Permissions, Camera } from 'expo';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -33,20 +34,31 @@ export default class HomeScreen extends React.Component {
             loop={false}
             showsPagination={false}
             index={1}
-            animated={false}
+            animated={true}
           >
             <View style={styles.slideDefault}>
+
+              <Svg
+                height="100%"
+                width="100%"
+              >
               <Text style={styles.text}>Restaurants</Text>
-              <Text>Loading...</Text>
-              <Spinner color='blue' />
+              <Text style={styles.text}>Loading...</Text>
+              <Spinner color='red'/>
+                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
+                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
+                <Circle cx="50%" cy="85%" r="24" fill="orange" />
+                <Circle cx="75%" cy="88%" r="20" fill="orange" />
+              </Svg>
             </View>
+
 
             <Swiper
               loop={false}
               showsPagination={false}
               horizontal={false}
               index={0}
-              animated={false}
+              animated={true}
             >
               <Swiper
                 loop={false}
@@ -72,7 +84,7 @@ export default class HomeScreen extends React.Component {
                 width="100%"
               >
                 <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
-                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('test for press in')}} />
+                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
                 <Circle cx="50%" cy="85%" r="24" fill="orange" />
                 <Circle cx="75%" cy="88%" r="20" fill="orange" />
               </Svg>
@@ -80,8 +92,17 @@ export default class HomeScreen extends React.Component {
             </Swiper>
             <View style={styles.slideDefault}>
 
+              <Svg
+                height="100%"
+                width="100%"
+              >
               <Text style={styles.text}>Clubs</Text>
               <Spinner color='blue' />
+                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
+                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
+                <Circle cx="50%" cy="85%" r="24" fill="orange" />
+                <Circle cx="75%" cy="88%" r="20" fill="orange" />
+              </Svg>
             </View>
           </Swiper>
         </Content>
@@ -123,7 +144,8 @@ const styles = StyleSheet.create({
   text:{
     color: 'black',
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center'
   }
 
 });
