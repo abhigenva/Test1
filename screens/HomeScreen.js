@@ -4,15 +4,13 @@ import {
   Platform,
   ScrollView,
   StyleSheet,
-  Text,
-  Button,
   TouchableOpacity,
   View,
   Alert,
 } from 'react-native';
 import { WebBrowser } from 'expo';
 import { MonoText } from '../components/StyledText';
-import { Container, Content, Spinner } from 'native-base';
+import { Container, Content, Spinner, Input, Icon, Item, Button, Text, Header } from 'native-base';
 import Swiper from 'react-native-swiper';
 import Svg, {
   Circle,
@@ -29,6 +27,13 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <Container>
+        <Header searchBar rounded>
+        <Item>
+          <Icon name="ios-search" />
+          <Input placeholder="Search" />
+          <Icon name="ios-people" />
+        </Item>
+        </Header>
         <Content>
           <Swiper
             loop={false}

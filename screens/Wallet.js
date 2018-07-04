@@ -5,7 +5,7 @@ import { Container, Content } from 'native-base';
 
 export default class Wallet extends React.Component {
   static navigationOptions = {
-    header: null,
+    
   };
 
   render() {
