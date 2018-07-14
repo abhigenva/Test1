@@ -1,16 +1,21 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, Button, Alert } from 'react-native';
+import { ScrollView, StyleSheet, Button, Alert } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
-import { Container, Content } from 'native-base';
+import { Container, Content, Separator, Text, Header, Title, Body } from 'native-base';
 
 export default class Wallet extends React.Component {
   static navigationOptions = {
-    
+    header: null,
   };
 
   render() {
     return (
       <Container>
+      <Header>
+        <Body>
+          <Text>Wallet</Text>
+        </Body>
+      </Header>
       <Content>
       <ScrollView style={styles.container}>
         <Text>
