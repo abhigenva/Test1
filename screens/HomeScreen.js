@@ -53,7 +53,7 @@ export default class HomeScreen extends React.Component {
                 <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
                 <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
                 <Circle cx="50%" cy="85%" r="24" fill="orange" />
-                <Circle cx="75%" cy="88%" r="20" fill="orange" />
+                <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
             </View>
 
@@ -76,24 +76,14 @@ export default class HomeScreen extends React.Component {
                   <Image source={require('../assets/images/image.png')} style={{width:'100%', height:'60%'}}/>
                 </View>
                 <View style={styles.slideDefault}>
-                    <Image source={require('../assets/images/pr.png')} style={{width:'100%', height:'60%', }}/>
+                    <Image source={require('../assets/images/pr.png')} style={{width:'100%', height:'60%' }}/>
                 </View>
                 <View style={styles.slideDefault}>
                   <Image source={require('../assets/images/cg.png')} style={{width:'100%', height:'60%'}}/>
                 </View>
 
               </Swiper>
-              <View style={styles.slideDefault}>
-              <Svg
-                height="100%"
-                width="100%"
-              >
-                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
-                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
-                <Circle cx="50%" cy="85%" r="24" fill="orange" />
-                <Circle cx="75%" cy="88%" r="20" fill="orange" />
-              </Svg>
-              </View>
+
             </Swiper>
             <View style={styles.slideDefault}>
 
@@ -142,7 +132,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   slideDefault:{
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#fefefe'
   },
