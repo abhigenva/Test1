@@ -85,6 +85,20 @@ export default class HomeScreen extends React.Component {
                 </View>
 
               </Swiper>
+              <View style={styles.slideDefault}>
+
+                <Svg
+                  height="100%"
+                  width="100%"
+                >
+                <Text style={styles.text}>Creating Animation</Text>
+                <Spinner color='black'/>
+                  <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
+                  <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
+                  <Circle cx="50%" cy="85%" r="24" fill="orange" />
+                  <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
+                </Svg>
+              </View>
 
             </Swiper>
             <View style={styles.slideDefault}>
@@ -146,7 +160,7 @@ const styles = StyleSheet.create({
   },
   info:{
     flex: 1,
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'flex-start',
     color: 'orange',
     fontSize: 24,
