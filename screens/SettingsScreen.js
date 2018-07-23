@@ -5,7 +5,7 @@ import { Container, Content, Spinner, Input, Icon, Item, Button, Text, Header } 
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
-    header: null,
+
 
   };
     render() {
@@ -13,6 +13,12 @@ export default class LinksScreen extends React.Component {
       <ScrollView style={styles.container}>
         <Container>
         <Content>
+        <Header searchBar rounded>
+        <Item>
+        <Input placeholder="Search"/>
+        <Icon name="ios-people"/>
+        </Item>
+        </Header>
         <Text>Waiting for a Match ?</Text>
         </Content>
         </Container>

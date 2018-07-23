@@ -8,6 +8,7 @@ import registerForPushNotificationsAsync from '../api/registerForPushNotificatio
 const RootStackNavigator = StackNavigator(
   {
     Main: {
+      
       screen: MainTabNavigator,
     },
   },
@@ -30,6 +31,7 @@ export default class RootNavigator extends React.Component {
   }
 
   render() {
+
     return <RootStackNavigator />;
   }
 
