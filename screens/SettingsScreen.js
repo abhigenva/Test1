@@ -18,7 +18,7 @@ export default class LinksScreen extends React.Component {
         </Header>
         <Content>
         <View style={styles.container}>
-        <Text>Waiting for a Match ?</Text>
+        <Text>Hello Settings.</Text>
         </View>
         </Content>
         </Container>
