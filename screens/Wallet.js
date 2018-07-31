@@ -13,7 +13,7 @@ export default class Wallet extends React.Component {
       <Container>
       <Header>
         <Body>
-          <Text>Wallet</Text>
+          <Text style={styles.heading}>Wallet</Text>
         </Body>
       </Header>
       <Content>
@@ -36,4 +36,8 @@ const styles = StyleSheet.create({
     paddingTop: 15,
     backgroundColor: '#fff',
   },
+  heading: {
+    fontWeight: 'bold',
+    fontSize: 24,
+  }
 });

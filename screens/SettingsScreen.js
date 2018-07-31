@@ -13,7 +13,7 @@ export default class LinksScreen extends React.Component {
         <Container>
         <Header>
           <Body>
-            <Text>Settings</Text>
+            <Text style={styles.heading}>Settings</Text>
           </Body>
         </Header>
         <Content>
@@ -31,6 +31,10 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     paddingTop: 15,
-
   },
+  heading: {
+    fontWeight: 'bold',
+    fontSize: 24,
+
+  }
 });
