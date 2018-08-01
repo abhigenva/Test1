@@ -24,7 +24,7 @@ export default class LinksScreen extends React.Component {
         </Badge>
         <Text>For more information tap below.</Text>
         <Badge info>
-        <Text onPress={() => {Alert.alert('Test for Press in')}}>Information.</Text>
+        <Text onPress={() => {Alert.alert('No info found.')}}>Information.</Text>
         </Badge>
         <Text>No matches found!!</Text>
       </ScrollView>
