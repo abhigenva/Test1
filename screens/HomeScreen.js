@@ -53,10 +53,11 @@ export default class HomeScreen extends React.Component {
               <Spinner color='red'/>
                 <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
                 <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}}/>
-                <Image source={require('../assets/images/256x256(Restron).png')} style={{position: 'absolute', top: 572, left: 85, width:'4%', height:'4%'}}/>
-
+                <Image source={require('../assets/images/Restron.png')} style={{width:'10%', height:'10%'}}/>
 
                 <Circle cx="50%" cy="85%" r="24" fill="orange" />
+                <Image source={require('../assets/images/Club.png')} style={{width:'10%', height: '10%'}}/>
+                <Image source={require('../assets/images/Heart.png')} style={{width:'10%', height: '10%'}}/>
                 <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
             </View>
