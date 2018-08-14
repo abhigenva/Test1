@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, StyleSheet, ListView, View } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 import { Container, Content, Separator, Text, Header, Title, Body } from 'native-base';
-import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {

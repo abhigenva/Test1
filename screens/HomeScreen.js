@@ -18,6 +18,7 @@ import Svg, {
   Ellipse,
 } from 'react-native-svg';
 import { Permissions, Camera } from 'expo';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -159,7 +160,7 @@ const styles = StyleSheet.create({
   },
   text:{
     color: 'black',
-    fontSize: 30,
+    fontSize: hp('6%'),
     fontWeight: 'bold',
     textAlign: 'center'
   },
@@ -168,7 +169,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     color: 'orange',
-    fontSize: 24,
+    fontSize: hp('5%'),
     fontWeight: 'bold',
   }
 
