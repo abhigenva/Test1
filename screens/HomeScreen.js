@@ -54,11 +54,12 @@ export default class HomeScreen extends React.Component {
               <Spinner color='red'/>
                 <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
                 <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}}/>
-                <Image source={require('../assets/images/Restron.png')} style={{width:'10%', height:'10%'}}/>
-
                 <Circle cx="50%" cy="85%" r="24" fill="orange" />
-                <Image source={require('../assets/images/Club.png')} style={{width:'10%', height: '10%'}}/>
-                <Image source={require('../assets/images/Heart.png')} style={{width:'10%', height: '10%'}}/>
+                <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between'}}>
+                <Image source={require('../assets/images/Restron.png')} style={{width: wp('10%'), height: hp('10%')}}/>
+                <Image source={require('../assets/images/Heart.png')}/>
+                <Image source={require('../assets/images/Club.png')} style={{width: wp('10%'), height: hp('10%')}}/>
+                </View>
                 <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
             </View>
@@ -160,7 +161,7 @@ const styles = StyleSheet.create({
   },
   text:{
     color: 'black',
-    fontSize: hp('6%'),
+    fontSize: hp('3%'),
     fontWeight: 'bold',
     textAlign: 'center'
   },
@@ -169,7 +170,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     color: 'orange',
-    fontSize: hp('5%'),
+    fontSize: hp('3%'),
     fontWeight: 'bold',
   }
 
