@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollView, StyleSheet, ListView, View } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 import { Container, Content, Separator, Text, Header, Title, Body } from 'native-base';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react';
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
@@ -34,7 +35,7 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontWeight: 'bold',
-    fontSize: 24,
+    fontSize: hp('5%'),
 
   }
 });
