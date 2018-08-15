@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
   View,
   Animated,
+  FlatList,
+  ListItem,
   Alert,
 } from 'react-native';
 import { WebBrowser } from 'expo';
@@ -115,7 +117,21 @@ export default class HomeScreen extends React.Component {
                 width="100%"
               >
               <Text style={styles.text}>Clubs</Text>
-              <Spinner color='blue' />
+              <View style={styles.container}>
+              <FlatList
+                data={[
+                  {key: 'Devin'},
+                  {key: 'Jackson'},
+                  {key: 'James'},
+                  {key: 'Joel'},
+                  {key: 'John'},
+                  {key: 'Jillian'},
+                  {key: 'Jimmy'},
+                  {key: 'Julie'},
+                ]}
+                renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
+              />
+              </View>
                 <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
                 <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
                 <Circle cx="50%" cy="85%" r="24" fill="orange" />
@@ -172,6 +188,15 @@ const styles = StyleSheet.create({
     color: 'orange',
     fontSize: hp('3%'),
     fontWeight: 'bold',
-  }
+  },
+  container: {
+   flex: 1,
+   paddingTop: 22
+  },
+  item: {
+    padding: 10,
+    fontSize: hp('3%'),
+    height: 44,
+  },
 
 });
