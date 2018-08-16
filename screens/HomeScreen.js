@@ -83,7 +83,7 @@ export default class HomeScreen extends React.Component {
                 <View style={styles.slideDefault}>
                   <Image source={require('../assets/images/image.png')} style={{width:'100%', height:'60%'}}/>
 
-                  <Text style={styles.info}>Norah Anderson, 23</Text>
+                  <Text style={styles.info}>Norah, 23</Text>
 
                 </View>
                 <View style={styles.slideDefault}>
