@@ -1,7 +1,7 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { TabNavigator, TabBarBottom } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation';
 
 import Colors from '../constants/Colors';
 
@@ -11,7 +11,7 @@ import SettingsScreen from '../screens/SettingsScreen';
 import ChatingScreen from '../screens/ChatingScreen';
 import Wallet from '../screens/Wallet';
 
-export default TabNavigator(
+export default createBottomTabNavigator(
   {
     Home: {
       screen: HomeScreen
@@ -67,7 +67,6 @@ export default TabNavigator(
         );
       },
     }),
-    tabBarComponent: TabBarBottom,
     tabBarOptions: {
       showLabel: false,
     },

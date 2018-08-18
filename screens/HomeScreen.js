@@ -21,6 +21,7 @@ import Svg, {
 } from 'react-native-svg';
 import { Permissions, Camera } from 'expo';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import ResponsiveImage from 'react-native-responsive-image';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {

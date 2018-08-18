@@ -46,8 +46,8 @@ export default class LinksScreen extends React.Component {
         <Text>Waiting for a Match ?</Text>
         <Animated.Image
           style={{
-            width: wp('10%'),
-            height: hp('5%'),
+            width: wp('16%'),
+            height: hp('9%'),
             transform: [{rotate: spin}]
           }}
           source={require('../assets/images/Restron.png')}/>
