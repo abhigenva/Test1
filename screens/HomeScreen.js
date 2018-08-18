@@ -59,9 +59,9 @@ export default class HomeScreen extends React.Component {
                 <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}}/>
                 <Circle cx="50%" cy="85%" r="24" fill="orange" />
                 <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-between'}}>
-                <Image source={require('../assets/images/Restron.png')} style={{width: wp('10%'), height: hp('10%')}}/>
-                <Image source={require('../assets/images/Heart.png')}/>
-                <Image source={require('../assets/images/Club.png')} style={{width: wp('10%'), height: hp('10%')}}/>
+                <Image source={require('../assets/images/Restron.png')} style={{flex: 1,width: undefined, height: undefined}} resizeMode="center"/>
+                <Image source={require('../assets/images/Heart.png')} style={{flex: 1,width: undefined, height: undefined}} resizeMode="center"/>
+                <Image source={require('../assets/images/Club.png')} style={{flex: 1,width: undefined, height: undefined}} resizeMode="center"/>
                 </View>
                 <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
@@ -82,16 +82,16 @@ export default class HomeScreen extends React.Component {
                 animated={true}
               >
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/image.png')} style={{width:'100%', height:'60%'}}/>
+                  <ResponsiveImage source={require('../assets/images/image.png')} initWidth="400" initHeight="400"/>
 
                   <Text style={styles.info}>Norah, 23</Text>
 
                 </View>
                 <View style={styles.slideDefault}>
-                    <Image source={require('../assets/images/pr.png')} style={{width:'100%', height:'60%' }}/>
+                    <ResponsiveImage source={require('../assets/images/pr.png')} initWidth="400" initHeight="400"/>
                 </View>
                 <View style={styles.slideDefault}>
-                  <Image source={require('../assets/images/cg.png')} style={{width:'100%', height:'60%'}}/>
+                  <ResponsiveImage source={require('../assets/images/cg.png')} initWidth="400" initHeight="400"/>
                 </View>
 
               </Swiper>
