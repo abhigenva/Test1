@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
   heading: {
     fontWeight: 'bold',
     fontSize: hp('5%'),
+    color: '#ff9933',
 
   }
 });
