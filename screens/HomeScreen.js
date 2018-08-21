@@ -47,7 +47,6 @@ export default class HomeScreen extends React.Component {
             animated={true}
           >
             <View style={styles.slideDefault}>
-
               <Svg
                 height="100%"
                 width="100%"
@@ -55,20 +54,15 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.text}>Restaurants</Text>
               <Text style={styles.text}>Loading...</Text>
               <Spinner color='red'/>
-                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
-                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}}/>
-                <ResponsiveImage source={require('../assets/images/Restron.png')} initWidth="50" initHeight="50"/>
-                <Circle cx="50%" cy="85%" r="24" fill="orange" />
-
-
-                <ResponsiveImage source={require('../assets/images/Heart.png')} initWidth="50" initHeight="50"/>
-                <ResponsiveImage source={require('../assets/images/Club.png')} initWidth="50" initHeight="50"/>
-
-                <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
+                <Ellipse cx="50%" cy="100%" rx="38%" ry="15%" stroke="#ff9933" strokeWidth="7%" fill="#fefefe"/>
+                <ResponsiveImage source={require('../assets/images/Restron.png')} initWidth="50" initHeight="50" style={{position: "absolute", top:"85%", left:"19%"}}/>
+                <Circle cx="25%" cy="88%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
+                <ResponsiveImage source={require('../assets/images/Heart.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"82%", left:"44%"}}/>
+                <Circle cx="50%" cy="85%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
+                <ResponsiveImage source={require('../assets/images/Club.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"85%", left:"69%"}}/>
+                <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
             </View>
-
-
             <Swiper
               loop={false}
               showsPagination={false}
@@ -84,9 +78,7 @@ export default class HomeScreen extends React.Component {
               >
                 <View style={styles.slideDefault}>
                   <ResponsiveImage source={require('../assets/images/image.png')} initWidth="400" initHeight="400"/>
-
                   <Text style={styles.info}>Norah, 23</Text>
-
                 </View>
                 <View style={styles.slideDefault}>
                     <ResponsiveImage source={require('../assets/images/pr.png')} initWidth="400" initHeight="400"/>
@@ -94,26 +86,25 @@ export default class HomeScreen extends React.Component {
                 <View style={styles.slideDefault}>
                   <ResponsiveImage source={require('../assets/images/cg.png')} initWidth="400" initHeight="400"/>
                 </View>
-
               </Swiper>
               <View style={styles.slideDefault}>
-
                 <Svg
                   height="100%"
                   width="100%"
                 >
-                <Text style={styles.text}>Creating Animation</Text>
-                <Spinner color='black'/>
-                  <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
-                  <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
-                  <Circle cx="50%" cy="85%" r="24" fill="orange" />
-                  <Circle cx="75%" cy="88%" r="20" fill="orange" onPressOut={() => {Alert.alert('Test for Press out')}} />
+                  <Text style={styles.text}>Creating Animation</Text>
+                  <Spinner color='black'/>
+                  <Ellipse cx="50%" cy="100%" rx="38%" ry="15%" stroke="#ff9933" strokeWidth="7%" fill="#fefefe"/>
+                  <ResponsiveImage source={require('../assets/images/Restron.png')} initWidth="50" initHeight="50" style={{position: "absolute", top:"85%", left:"19%"}}/>
+                  <Circle cx="25%" cy="88%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
+                  <ResponsiveImage source={require('../assets/images/Heart.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"82%", left:"44%"}}/>
+                  <Circle cx="50%" cy="85%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
+                  <ResponsiveImage source={require('../assets/images/Club.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"85%", left:"69%"}}/>
+                  <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />
                 </Svg>
               </View>
-
             </Swiper>
             <View style={styles.slideDefault}>
-
               <Svg
                 height="100%"
                 width="100%"
@@ -134,10 +125,13 @@ export default class HomeScreen extends React.Component {
                 renderItem={({item}) => <Text style={styles.item}>{item.key}</Text>}
               />
               </View>
-                <Ellipse cx="50%" cy="100%" rx="150" ry="100" stroke="orange" strokeWidth="7" fill="#fefefe"/>
-                <Circle cx="25%" cy="88%" r="20" fill="orange" onPressIn={() => {Alert.alert('Test for Press in')}} />
-                <Circle cx="50%" cy="85%" r="24" fill="orange" />
-                <Circle cx="75%" cy="88%" r="20" fill="orange" />
+              <Ellipse cx="50%" cy="100%" rx="38%" ry="15%" stroke="#ff9933" strokeWidth="7%" fill="#fefefe"/>
+              <ResponsiveImage source={require('../assets/images/Restron.png')} initWidth="50" initHeight="50" style={{position: "absolute", top:"85%", left:"19%"}}/>
+              <Circle cx="25%" cy="88%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
+              <ResponsiveImage source={require('../assets/images/Heart.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"82%", left:"44%"}}/>
+              <Circle cx="50%" cy="85%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
+              <ResponsiveImage source={require('../assets/images/Club.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"85%", left:"69%"}}/>
+              <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
             </View>
           </Swiper>
