@@ -53,6 +53,7 @@ export default class HomeScreen extends React.Component {
               >
               <Text style={styles.text}>Restaurants</Text>
               <Text style={styles.text}>Loading...</Text>
+              <Circle cx="50%" cy="50%" r="5%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />
               <Spinner color='red'/>
                 <Ellipse cx="50%" cy="100%" rx="38%" ry="15%" stroke="#ff9933" strokeWidth="7%" fill="#fefefe"/>
                 <ResponsiveImage source={require('../assets/images/Restron.png')} initWidth="50" initHeight="50" style={{position: "absolute", top:"85%", left:"19%"}}/>
@@ -131,7 +132,7 @@ export default class HomeScreen extends React.Component {
               <ResponsiveImage source={require('../assets/images/Heart.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"82%", left:"44%"}}/>
               <Circle cx="50%" cy="85%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
               <ResponsiveImage source={require('../assets/images/Club.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"85%", left:"69%"}}/>
-              <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />   
+              <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />
               </Svg>
             </View>
           </Swiper>
@@ -167,6 +168,7 @@ export default class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   slideDefault:{
     flex: 1,
+    paddingTop: '2%',
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: '#fefefe'

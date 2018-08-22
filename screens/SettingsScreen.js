@@ -23,9 +23,9 @@ export default class LinksScreen extends React.Component {
         <Text>Hello Settings.</Text>
         </View>
         <View style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
-          <ResponsiveImage source={{uri: 'https://reactjs.org/logo-og.png'}} initWidth="138" initHeight="138"/>
-          <ResponsiveImage source={{uri: 'https://reactjs.org/logo-og.png'}} initWidth="138" initHeight="138"/>
-          <ResponsiveImage source={{uri: 'https://reactjs.org/logo-og.png'}} initWidth="138" initHeight="138"/>
+          <ResponsiveImage source={{uri: 'https://reactjs.org/logo-og.png'}} initWidth="100" initHeight="100"/>
+          <ResponsiveImage source={{uri: 'https://reactjs.org/logo-og.png'}} initWidth="120" initHeight="120"/>
+          <ResponsiveImage source={{uri: 'https://reactjs.org/logo-og.png'}} initWidth="140" initHeight="140"/>
       </View>
         </Content>
         </Container>

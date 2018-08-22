@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet, Alert, Animated, Image, Easing } from 'react-na
 import { ExpoLinksView } from '@expo/samples';
 import { Container, Content, Separator, Text, Header, Title, Body, Badge } from 'native-base';
 import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+import ResponsiveImage from 'react-native-responsive-image';
 
 export default class LinksScreen extends React.Component {
   static navigationOptions = {
@@ -46,11 +47,12 @@ export default class LinksScreen extends React.Component {
         <Text>Waiting for a Match ?</Text>
         <Animated.Image
           style={{
-            width: wp('16%'),
-            height: hp('9%'),
-            transform: [{rotate: spin}]
+            transform: [{rotate: spin}],
+            width: wp("16%"),
+            height: hp("9%"),
           }}
-          source={require('../assets/images/Restron.png')}/>
+          source={require('../assets/images/Restron.png')}
+          />
         <Badge success>
         <Text>Match Found!!</Text>
         </Badge>
