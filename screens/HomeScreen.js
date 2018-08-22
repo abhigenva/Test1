@@ -131,7 +131,7 @@ export default class HomeScreen extends React.Component {
               <ResponsiveImage source={require('../assets/images/Heart.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"82%", left:"44%"}}/>
               <Circle cx="50%" cy="85%" r="3%" fill="#ff9933" onPressIn={() => {Alert.alert('Test for Press in')}}/>
               <ResponsiveImage source={require('../assets/images/Club.png')} initWidth="50" initHeight="50" style={{position:"absolute", top:"85%", left:"69%"}}/>
-              <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />
+              <Circle cx="75%" cy="88%" r="3%" fill="#ff9933" onPressOut={() => {Alert.alert('Test for Press out')}} />   
               </Svg>
             </View>
           </Swiper>
