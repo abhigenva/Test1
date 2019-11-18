@@ -16,7 +16,7 @@
     "react-native-cacheable-image": "^2.0.0",
     "react-native-responsive-image": "^2.3.1",
     "react-native-responsive-screen": "^1.1.6",
-    "react-native-svg": "^6.3.1",
+    "react-native-svg": "^9.13.3",
     "react-native-swiper": "^1.5.13",
     "react-navigation": "^2.11.2"
   },
