@@ -8,7 +8,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
-    "@expo/samples": "2.1.1",
+    "@expo/samples": "3.0.1",
     "expo": "^25.0.0",
     "native-base": "^2.7.2",
     "react": "16.2.0",
