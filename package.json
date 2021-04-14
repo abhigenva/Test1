@@ -17,7 +17,7 @@
     "react-native-responsive-image": "^2.3.1",
     "react-native-responsive-screen": "^1.4.2",
     "react-native-svg": "^12.1.0",
-    "react-native-swiper": "^1.5.14",
+    "react-native-swiper": "^1.6.0",
     "react-navigation": "^4.0.10"
   },
   "devDependencies": {
