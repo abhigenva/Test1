@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@expo/samples": "3.0.1",
-    "expo": "^42.0.3",
+    "expo": "^47.0.6",
     "native-base": "^2.15.2",
     "react": "16.2.0",
     "react-native": "^0.53.3",
